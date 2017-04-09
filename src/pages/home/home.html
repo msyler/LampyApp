@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Welcome to Bluetooth project!</h2>
+
+    <ion-range min="0" max="255" pin="true" [(ngModel)]="redColor" color="basic_red" (ionChange)="colorChange()">
+      <ion-icon range-left small name="remove-circle" style="color: red;"></ion-icon>
+      <ion-icon range-right name="add-circle" style="color: red;"></ion-icon>
+    </ion-range>
+
+    <ion-range min="0" max="255" pin="true" [(ngModel)]="greenColor" color="basic_green" (ionChange)="colorChange()">
+      <ion-icon range-left small name="remove-circle" style="color: green;"></ion-icon>
+      <ion-icon range-right name="add-circle" style="color: green;"></ion-icon>
+    </ion-range>
+
+    <ion-range min="0" max="255" pin="true" [(ngModel)]="blueColor" color="basic_blue" (ionChange)="colorChange()">
+      <ion-icon range-left small name="remove-circle" style="color: blue;"></ion-icon>
+      <ion-icon range-right name="add-circle" style="color: blue;"></ion-icon>
+    </ion-range>
+    
+</ion-content>
